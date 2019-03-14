@@ -9,7 +9,7 @@ FROM docker.elastic.co/elasticsearch/elasticsearch:6.6.1@sha256:b3c3863bfef1bdc7
 # For a full list of supported images and tags visit https://www.docker.elastic.co
 
 # install elasticsearch-analysis-ik
-./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.6.1/elasticsearch-analysis-ik-6.6.1.zip
+RUN yes |./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.6.1/elasticsearch-analysis-ik-6.6.1.zip
 
 # For Elasticsearch documentation visit https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
 
